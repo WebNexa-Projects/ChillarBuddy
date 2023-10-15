@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arisu.chillarbuddy.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/referFragment"
+        android:name="com.arisu.chillarbuddy.HomeFragment"
+        android:label="fragment_refer"
+        tools:layout="@layout/fragment_refer" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.arisu.chillarbuddy.HomeFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

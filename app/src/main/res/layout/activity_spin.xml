@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe7d5"
+    tools:context=".SpinActivity">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Spin &amp; Win"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/spin_card_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/wallet" />
+
+            <TextView
+                android:id="@+id/bala"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/spin_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/spin_image"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+    <TextView
+        android:id="@+id/ttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/popins"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="Spin &amp; Earn Exciting Rewards !"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/popins"
+        android:gravity="center"
+        android:text="Stand a chance to win bag full of Chillar for\nSpinning the wheel of fortune"
+        android:textColor="#ae9989"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ttt" />
+
+    <LinearLayout
+        android:id="@+id/spin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/spin_card_bg"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="Let's Spin"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startbtn"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            app:lottie_rawRes="@raw/timer" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

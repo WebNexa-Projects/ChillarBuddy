@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/buy_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/offerwall_outline_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/offer_logo"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/app_logo" />
+
+        <LinearLayout
+            android:layout_width="178dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/offerwall_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="offerwall Title"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:textColor="#ca896f"/>
+
+            <TextView
+                android:id="@+id/coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="6dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="#ca896f"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/rupee" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

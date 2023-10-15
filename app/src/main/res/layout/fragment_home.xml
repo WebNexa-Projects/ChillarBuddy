@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Welcome"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/wallet"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Wallet"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="75dp"
+                        android:src="@drawable/next" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/user_name_body">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Guest"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="130dp"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rupee" />
+
+                <TextView
+                    android:id="@+id/bala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:text="0"
+                    android:textColor="#c57b58"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:text=".00"
+                    android:textColor="#c57b58"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="160dp"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:text="Wallet Balance"
+                    android:textColor="#7B7B7B"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <LinearLayout
+                android:id="@+id/daily"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/eran_option_card_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/gift_box" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scratch"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/eran_option_card_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/scratch1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spin"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/eran_option_card_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/spin_wh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/eran_option_card_bg"
+                android:gravity="center">
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:id="@+id/lotti"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   app:lottie_rawRes="@id/play"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-5dp"
+                android:text="Daily Bonus"
+                android:textColor="#7B7B7B"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Scratch &amp; Win"
+                android:textColor="#7B7B7B"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="Spin &amp; Win"
+                android:textColor="#7B7B7B"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Play Game"
+                android:textColor="#7B7B7B"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Offers"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/offerwall_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="365dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
